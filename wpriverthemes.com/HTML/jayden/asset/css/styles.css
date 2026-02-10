@@ -1256,7 +1256,7 @@ form .flat-alert {
 }
 
 .offcanvas-backdrop {
-  cursor: url(../icons/cursor-close.html), auto;
+  cursor: url(../icons/cursor-close.svg), auto;
 }
 
 .offcanvas-search {
@@ -1900,7 +1900,7 @@ header .mobile-menu {
 }
 
 .avatar-wrap {
-  background-image: url(../images/avatar/bg-avatar.html);
+  background-image: url(../images/avatar/bg-avatar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1975,33 +1975,33 @@ header .mobile-menu {
 .gradient-icon-1 {
   width: 118px;
   height: 118px;
-  -webkit-mask: url("../images/section/step1.html") no-repeat center;
+  -webkit-mask: url("../images/section/step1.svg") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step1.html") no-repeat center;
+  mask: url("../images/section/step1.svg") no-repeat center;
 }
 
 .gradient-icon-2 {
   width: 112px;
   height: 71px;
-  -webkit-mask: url("../images/section/step2.html") no-repeat center;
+  -webkit-mask: url("../images/section/step2.svg") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step2.html") no-repeat center;
+  mask: url("../images/section/step2.svg") no-repeat center;
 }
 
 .gradient-icon-3 {
   width: 74px;
   height: 106px;
-  -webkit-mask: url("../images/section/step3.html") no-repeat center;
+  -webkit-mask: url("../images/section/step3.svg") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step3.html") no-repeat center;
+  mask: url("../images/section/step3.svg") no-repeat center;
 }
 
 .gradient-icon-4 {
   width: 89px;
   height: 114px;
-  -webkit-mask: url("../images/section/step4.html") no-repeat center;
+  -webkit-mask: url("../images/section/step4.svg") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step4.html") no-repeat center;
+  mask: url("../images/section/step4.svg") no-repeat center;
 }
 
 .gradient-icon {
@@ -3175,7 +3175,7 @@ header .mobile-menu {
   border-radius: 12px;
   font-size: 32px;
   margin-top: 14px;
-  background-image: url(../images/section/img-bg.html);
+  background-image: url(../images/section/img-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3382,7 +3382,7 @@ header .mobile-menu {
 }
 .section-testimonial-inner::before {
   position: absolute;
-  content: url(../images/section/quote.html);
+  content: url(../images/section/quote.png);
   bottom: -49px;
   left: 56px;
   color: transparent;
