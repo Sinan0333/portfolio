@@ -1,0 +1,40 @@
+HTTrack3.49-2 launched on Tue, 10 Feb 2026 10:52:33 at https://wpriverthemes.com/HTML/jayden/home1-v6.html none none
+(winhttrack https://wpriverthemes.com/HTML/jayden/home1-v6.html -O "/Users/bpract/websites/jayden-v2" -P none:8080 -%v none none )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:53:37	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link none/robots.txt (from primary/primary)
+10:53:37	Warning: 	Retry after error -5 (Unable to get server's address: nodename nor servname provided, or not known) at link none/ (from primary/primary)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/js/lightbox.min.js (from https://wpriverthemes.com/HTML/jayden/home1-v6.html)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/js/main.js (from https://wpriverthemes.com/HTML/jayden/home1-v6.html)
+10:53:59	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link none/ (from primary/primary)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/icons/cursor-close.svg (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/avatar/bg-avatar.png (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/step1.svg (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/step2.svg (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/step3.svg (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/step4.svg (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/img-bg.png (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/section/quote.png (from https://wpriverthemes.com/HTML/jayden/asset/css/styles.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/item/loading.gif (from https://wpriverthemes.com/HTML/jayden/asset/css/lightbox.min.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/item/prev.png (from https://wpriverthemes.com/HTML/jayden/asset/css/lightbox.min.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/item/next.png (from https://wpriverthemes.com/HTML/jayden/asset/css/lightbox.min.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/item/close.png (from https://wpriverthemes.com/HTML/jayden/asset/css/lightbox.min.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/fonts/icomoon.eot?jiobqw (from https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/style.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/fonts/icomoon.ttf?jiobqw (from https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/style.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/fonts/icomoon.woff?jiobqw (from https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/style.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/fonts/icomoon.svg?jiobqw (from https://wpriverthemes.com/HTML/jayden/asset/icons/icomoon/style.css)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/bg-3d/video4.mp4 (from https://wpriverthemes.com/HTML/jayden/index.html)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/bg-3d/video2.mp4 (from https://wpriverthemes.com/HTML/jayden/home1-v2.html)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/bg-3d/video3.mp4 (from https://wpriverthemes.com/HTML/jayden/home1-v3.html)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/asset/images/bg-3d/video1.mp4 (from https://wpriverthemes.com/HTML/jayden/home1-v4.html)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/Version/ (from https://wpriverthemes.com/HTML/jayden/asset/js/swiper-bundle.min.js)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/e (from https://wpriverthemes.com/HTML/jayden/asset/js/swiper-bundle.min.js)
+10:53:59	Error: 	"Too Many Requests" (429) at link https://wpriverthemes.com/HTML/jayden/t.params.url (from https://wpriverthemes.com/HTML/jayden/asset/js/swiper-bundle.min.js)
+10:53:59	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link none/ (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 26 seconds : 89 links scanned, 59 files written (4666682 bytes overall) [2970491 bytes received at 34540 bytes/sec], 2083671 bytes transferred using HTTP compression in 39 files, ratio 16%, 10.6 requests per connection
+(27 errors, 2 warnings, 0 messages)
