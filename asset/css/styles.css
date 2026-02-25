@@ -1975,17 +1975,17 @@ header .mobile-menu {
 .gradient-icon-1 {
   width: 118px;
   height: 118px;
-  -webkit-mask: url("../images/section/step1.svg") no-repeat center;
+  -webkit-mask: url("../images/section/react-skeletonify2.png") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step1.svg") no-repeat center;
+  mask: url("../images/section/react-skeletonify2.png") no-repeat center;
 }
 
 .gradient-icon-2 {
   width: 112px;
   height: 71px;
-  -webkit-mask: url("../images/section/step2.svg") no-repeat center;
+  -webkit-mask: url("../images/section/typeless.png") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step2.svg") no-repeat center;
+  mask: url("../images/section/typeless.png") no-repeat center;
 }
 
 .gradient-icon-3 {
