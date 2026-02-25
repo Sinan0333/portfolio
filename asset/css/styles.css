@@ -3353,6 +3353,17 @@ header .mobile-menu {
 }
 .section-tech-stack .tech-stack-item .image {
   margin-bottom: 25px;
+  background: #000;
+  padding: 30px;
+  border-radius: 18px;
+  display: inline-block;
+}
+/* ensure all tech stack logos share a uniform size */
+.section-tech-stack .tech-stack-item .image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: inline-block;
 }
 .section-tech-stack.v2 {
   margin-top: 0;
