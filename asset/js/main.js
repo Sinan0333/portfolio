@@ -363,6 +363,25 @@
         })
     }
 
+    // dynamic_time
+    var updateDynamicTime = function () {
+        const timeElement = document.getElementById('dynamic-time');
+        if (timeElement) {
+            const updateTime = () => {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', {
+                    timeZone: 'Asia/Kolkata',
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                timeElement.textContent = timeString;
+            };
+            updateTime();
+            setInterval(updateTime, 60000); // Update every minute
+        }
+    }
+
     // Dom Ready
     $(function () {
         animateText();
@@ -374,5 +393,6 @@
         stickyTabs();
         active_item();
         settings_color();
+        updateDynamicTime();
     });
 })(jQuery);
