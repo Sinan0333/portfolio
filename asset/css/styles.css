@@ -2003,33 +2003,38 @@ header .mobile-menu {
 .gradient-icon-1 {
   width: 118px;
   height: 118px;
-  -webkit-mask: url("../images/section/react-skeletonify.png") no-repeat center;
+  -webkit-mask: url("../images/section/open-source/react-skeletonify.png")
+    no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/react-skeletonify.png") no-repeat center;
+  mask: url("../images/section/open-source/react-skeletonify.png") no-repeat
+    center;
 }
 
 .gradient-icon-2 {
   width: 112px;
   height: 71px;
-  -webkit-mask: url("../images/section/typeless.png") no-repeat center;
+  -webkit-mask: url("../images/section/open-source/typeless.png") no-repeat
+    center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/typeless.png") no-repeat center;
+  mask: url("../images/section/open-source/typeless.png") no-repeat center;
 }
 
 .gradient-icon-3 {
   width: 74px;
   height: 106px;
-  -webkit-mask: url("../images/section/react-avatar-studio.png") no-repeat center;
+  -webkit-mask: url("../images/section/open-source/react-avatar-studio.png")
+    no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/react-avatar-studio.png") no-repeat center;
+  mask: url("../images/section/open-source/react-avatar-studio.png") no-repeat
+    center;
 }
 
 .gradient-icon-4 {
   width: 89px;
   height: 114px;
-  -webkit-mask: url("../images/section/step4.svg") no-repeat center;
+  -webkit-mask: url("../images/section/open-source/step4.svg") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step4.svg") no-repeat center;
+  mask: url("../images/section/open-source/step4.svg") no-repeat center;
 }
 
 .gradient-icon {
@@ -4598,11 +4603,25 @@ header .mobile-menu {
     padding: 28px 20px 50px 20px;
   }
   .section-process .process-item {
-    padding: 32px 20px 50px 20px;
+    padding: 32px 20px 40px 20px;
+    flex-direction: column;
+    gap: 24px;
   }
   .section-process .process-item .content {
     min-height: unset;
     gap: 20px;
+  }
+  .section-process .process-item .image {
+    width: 120px;
+    height: 120px;
+    align-self: flex-start;
+  }
+  .gradient-icon-1,
+  .gradient-icon-2,
+  .gradient-icon-3,
+  .gradient-icon-4 {
+    max-width: 80px;
+    max-height: 80px;
   }
   .pricing-item .top {
     padding: 25px 20px 40px;
@@ -4667,6 +4686,15 @@ header .mobile-menu {
 @media (max-width: 424px) {
   .header .theme-btn {
     padding: 11px 43px 10px 43px;
+  }
+}
+
+@media (max-width: 576px) {
+  .signature {
+    margin-top: -35px !important;
+  }
+  .cta .signature {
+    margin-bottom: -56px !important;
   }
 }
 
