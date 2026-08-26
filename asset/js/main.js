@@ -332,16 +332,21 @@
     var stickyTabs = function () {
         let sectionIds = $('a.scroll-to');
         $(document).scroll(function () {
+            let scrollPosition = $(document).scrollTop();
             sectionIds.each(function () {
                 let container = $(this).attr('href');
-                let containerOffset = $(container).offset().top;
-                let containerHeight = $(container).outerHeight();
-                let containerBottom = containerOffset + containerHeight;
-                let scrollPosition = $(document).scrollTop();
-                if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
-                $(this).addClass('active');
-                } else {
-                $(this).removeClass('active');
+                if (container && container.startsWith('#') && $(container).length > 0) {
+                    let offset = $(container).offset();
+                    if (offset) {
+                        let containerOffset = offset.top;
+                        let containerHeight = $(container).outerHeight();
+                        let containerBottom = containerOffset + containerHeight;
+                        if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
+                            $(this).addClass('active');
+                        } else {
+                            $(this).removeClass('active');
+                        }
+                    }
                 }
             });
         });
