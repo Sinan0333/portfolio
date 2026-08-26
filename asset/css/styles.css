@@ -2003,9 +2003,9 @@ header .mobile-menu {
 .gradient-icon-1 {
   width: 118px;
   height: 118px;
-  -webkit-mask: url("../images/section/react-skeletonify2.png") no-repeat center;
+  -webkit-mask: url("../images/section/react-skeletonify.png") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/react-skeletonify2.png") no-repeat center;
+  mask: url("../images/section/react-skeletonify.png") no-repeat center;
 }
 
 .gradient-icon-2 {
@@ -2019,9 +2019,9 @@ header .mobile-menu {
 .gradient-icon-3 {
   width: 74px;
   height: 106px;
-  -webkit-mask: url("../images/section/step3.svg") no-repeat center;
+  -webkit-mask: url("../images/section/react-avatar-studio.png") no-repeat center;
   -webkit-mask-size: contain;
-  mask: url("../images/section/step3.svg") no-repeat center;
+  mask: url("../images/section/react-avatar-studio.png") no-repeat center;
 }
 
 .gradient-icon-4 {
