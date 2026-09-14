@@ -5,6 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="theme-color" content="#0a0a0a" />
 
     <!-- Primary SEO Metadata -->
     <title>
@@ -31,7 +32,9 @@
       content="Explore full-stack web applications, open-source projects, and UI engineering solutions by Mohammed Sinan (Sinan M P)." />
     <meta
       property="og:image"
-      content="https://sinan-dev.in/asset/images/logo/favicon.png" />
+      content="https://sinan-dev.in/asset/images/og-banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +47,7 @@
       content="Full-Stack & MERN Stack Developer crafting responsive web apps, NPM packages, and Web3 solutions." />
     <meta
       name="twitter:image"
-      content="https://sinan-dev.in/asset/images/logo/favicon.png" />
+      content="https://sinan-dev.in/asset/images/og-banner.png" />
 
     <!-- Structured Data (JSON-LD for Google Knowledge Graph) -->
     <script type="application/ld+json">
@@ -54,7 +57,19 @@
         "name": "Mohammed Sinan",
         "alternateName": ["Sinan M P", "Sinan MP"],
         "url": "https://sinan-dev.in/",
+        "image": "https://sinan-dev.in/asset/images/avatar/sinan.jpg",
         "jobTitle": "Full-Stack MERN Developer",
+        "email": "sinan.m.p333@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/Sinan0333",
+          "https://www.linkedin.com/in/mohammed-sinan-mp",
+          "https://www.instagram.com/_atsinan_"
+        ],
         "knowsAbout": [
           "Full-Stack Development",
           "MERN Stack",
@@ -105,6 +120,20 @@
     <link
       rel="apple-touch-icon-precomposed"
       href="asset/images/logo/favicon.png" />
+    <!-- Visually hidden utility for SEO -->
+    <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
   </head>
 
   <body class="counter-scroll">
@@ -116,7 +145,7 @@
 
       <!-- tf-btn-menu -->
       <div class="tf-btn-menu">
-        <img src="asset/icons/dashboard.svg" alt="" />
+        <img src="asset/icons/dashboard.svg" alt="Open navigation menu" />
       </div>
       <!-- /tf-btn-menu -->
 
@@ -282,7 +311,10 @@
       <!-- left-sidebar -->
       <div class="left-sidebar">
         <div class="heading">
-          <img style="width: 32px" src="asset/images/logo/favicon.png" alt="" />
+          <img
+            style="width: 32px"
+            src="asset/images/logo/favicon.png"
+            alt="Mohammed Sinan logo" />
           <div class="box-status">
             <div class="dot"></div>
             <div class="text-body-1">
@@ -293,17 +325,19 @@
         <div class="image">
           <div class="avatar avatar-wrap">
             <img
+              fetchpriority="high"
               class="lazyload avatar-bg"
               src="asset/images/avatar/sinan.jpg"
               data-src="asset/images/avatar/sinan.jpg"
-              alt="photo" />
+              alt="Mohammed Sinan — Full-Stack MERN Developer" />
           </div>
           <img
+            loading="lazy"
             style="margin-top: -20px"
             class="lazyload signature"
             src="asset/images/section/signature-1.png"
             data-src="asset/images/section/signature-1.png"
-            alt="" />
+            alt="Mohammed Sinan signature" />
           <!-- <div class="text-signature">Jayden</div> -->
         </div>
         <div class="infor">
@@ -364,6 +398,9 @@
                     Introduction
                   </div>
                   <h1 class="title split-text effect-right">
+                    <span class="visually-hidden"
+                      >Mohammed Sinan — Full-Stack MERN Developer</span
+                    >
                     Building Products <br />
                     That Just Work
                   </h1>
@@ -540,26 +577,31 @@
                         href="asset/images/section/selected-works/brew-and-bite.jpeg"
                         data-lightbox="example-1">
                         <img
+                          loading="lazy"
                           class="lazyload"
                           src="asset/images/section/selected-works/brew-and-bite.jpeg"
                           data-src="asset/images/section/selected-works/brew-and-bite.jpeg"
-                          alt="" />
+                          alt="Brew and Bite — Restaurant website project screenshot" />
                       </a>
                       <div class="content">
                         <div class="infor">
                           <div class="sub-heading sub">Static Website</div>
                           <h3 class="title">
-                            <a href="https://brew-and-bite.sinan-dev.in"
+                            <a
+                              target="_blank"
+                              href="https://brew-and-bite.sinan-dev.in"
                               >Restaurant Website</a
                             >
                           </h3>
                           <a
+                            target="_blank"
                             href="https://brew-and-bite.sinan-dev.in/"
                             class="link date text-body-2 type-tags"
                             >Jan 2026</a
                           >
                         </div>
                         <a
+                          target="_blank"
                           href="https://brew-and-bite.sinan-dev.in/"
                           class="btn-links">
                           <i class="icon icon-arrow-top-right"></i>
@@ -572,26 +614,31 @@
                         href="asset/images/section/selected-works/fashion-archlight2.jpeg"
                         data-lightbox="example-1">
                         <img
+                          loading="lazy"
                           class="lazyload"
                           src="asset/images/section/selected-works/fashion-archlight2.jpeg"
                           data-src="asset/images/section/selected-works/fashion-archlight2.jpeg"
-                          alt="" />
+                          alt="Fashion Archlight — e-commerce website project screenshot" />
                       </a>
                       <div class="content">
                         <div class="infor">
                           <div class="sub-heading sub">Dynamic Website</div>
                           <h3 class="title">
-                            <a href="https://fashion-arclight.sinan-dev.in/"
+                            <a
+                              target="_blank"
+                              href="https://fashion-arclight.sinan-dev.in/"
                               >Fashion Archlight - e-commerce</a
                             >
                           </h3>
                           <a
+                            target="_blank"
                             href="https://fashion-arclight.sinan-dev.in/"
                             class="link date text-body-2 type-tags"
                             >May 2024</a
                           >
                         </div>
                         <a
+                          target="_blank"
                           href="https://fashion-arclight.sinan-dev.in/"
                           class="btn-links">
                           <i class="icon icon-arrow-top-right"></i>
@@ -604,10 +651,11 @@
                         href="asset/images/section/selected-works/react-skeletonify.jpeg"
                         data-lightbox="example-1">
                         <img
+                          loading="lazy"
                           class="lazyload"
                           src="asset/images/section/selected-works/react-skeletonify.jpeg"
                           data-src="asset/images/section/selected-works/react-skeletonify.jpeg"
-                          alt="" />
+                          alt="React Skeletonify — NPM package documentation website screenshot" />
                       </a>
                       <div class="content">
                         <div class="infor">
@@ -615,17 +663,21 @@
                             Documentation Website
                           </div>
                           <h3 class="title">
-                            <a href="https://react-skeletonify.sinan-dev.in/"
+                            <a
+                              target="_blank"
+                              href="https://react-skeletonify.sinan-dev.in/"
                               >React Skeletonify - NPM</a
                             >
                           </h3>
                           <a
+                            target="_blank"
                             href="https://react-skeletonify.sinan-dev.in/"
                             class="link date text-body-2 type-tags"
                             >Sep 2025</a
                           >
                         </div>
                         <a
+                          target="_blank"
                           href="https://react-skeletonify.sinan-dev.in/"
                           class="btn-links">
                           <i class="icon icon-arrow-top-right"></i>
@@ -861,7 +913,8 @@
                           <div class="swiper-slide">
                             <a
                               href="asset/images/section/works/Bose.jpg"
-                              data-lightbox="example-2">
+                              data-lightbox="example-2"
+                              alt>
                               <img
                                 class="lazyload"
                                 src="asset/images/section/works/Bose.jpg"
@@ -1147,10 +1200,11 @@
                             <div class="customer-info">
                               <div class="image">
                                 <img
+                                  loading="lazy"
                                   class="lazyload"
                                   src="asset/images/avatar/avatar-2.jpg"
                                   data-src="asset/images/avatar/avatar-2.jpg"
-                                  alt="" />
+                                  alt="Lewis Jones — CEO of Avade Inc" />
                               </div>
                               <div class="content">
                                 <h6 class="name fw-medium">
@@ -1166,17 +1220,28 @@
                             <div class="customer-info">
                               <div class="image">
                                 <img
+                                  loading="lazy"
                                   class="lazyload"
                                   src="asset/images/avatar/avatar-3.jpg"
                                   data-src="asset/images/avatar/avatar-3.jpg"
-                                  alt="" />
+                                  alt="Farjas — CEO of Preacton" />
                               </div>
                               <div class="content">
                                 <h6 class="name fw-medium">
-                                  <a href="#" class="link">Farjas</a>
+                                  <a
+                                    href="https://www.linkedin.com/in/farjas/"
+                                    target="_blank"
+                                    class="link"
+                                    >Farjas</a
+                                  >
                                 </h6>
                                 <div class="text-body-2 info">
-                                  CEO of Preacton
+                                  <a
+                                    class="link"
+                                    href="https://www.preacton.com"
+                                    target="_blank"
+                                    >CEO of Preacton</a
+                                  >
                                 </div>
                               </div>
                             </div>
@@ -1185,17 +1250,28 @@
                             <div class="customer-info">
                               <div class="image">
                                 <img
+                                  loading="lazy"
                                   class="lazyload"
                                   src="asset/images/avatar/hrishikesh-prasad.jpeg"
                                   data-src="asset/images/avatar/hrishikesh-prasad.jpeg"
-                                  alt="" />
+                                  alt="Hrishikesh Prasad — Full-Stack Developer at Bpract" />
                               </div>
                               <div class="content">
                                 <h6 class="name fw-medium">
-                                  <a href="#" class="link">Hrishikesh Prasad</a>
+                                  <a
+                                    href="https://www.linkedin.com/in/hrishikesh-prasad-c/"
+                                    class="link"
+                                    target="_blank"
+                                    >Hrishikesh Prasad</a
+                                  >
                                 </h6>
                                 <div class="text-body-2 info">
-                                  Full-Stack Developer at Bpract
+                                  <a
+                                    class="link"
+                                    target="_blank"
+                                    href="https://bpract.com/"
+                                    >Full-Stack Developer at Bpract</a
+                                  >
                                 </div>
                               </div>
                             </div>
@@ -1604,11 +1680,12 @@
               class="offset-xxl-5 col-xxl-7 offset-xl-4 col-xl-7 offset-lg-2 col-lg-8">
               <a href="#contact" class="cta">
                 <img
+                  loading="lazy"
                   style="margin-bottom: -25px"
                   class="lazyload signature"
                   src="asset/images/section/signature-1.png"
                   data-src="asset/images/section/signature-1.png"
-                  alt="" />
+                  alt="Mohammed Sinan signature" />
                 <!-- <div class="text-signature">Jayden</div> -->
                 <div class="infiniteslide_wrap cta-infiniteslide style-1">
                   <div class="infiniteslide">
@@ -1654,7 +1731,11 @@
             </div>
           </div>
         </div>
-        <img src="asset/images/section/img-bg-2.png" alt="" class="map" />
+        <img
+          loading="lazy"
+          src="asset/images/section/img-bg-2.png"
+          alt="World map background"
+          class="map" />
         <div class="box-gradient2"></div>
       </footer>
       <!-- /footer -->
