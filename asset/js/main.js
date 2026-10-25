@@ -387,6 +387,96 @@
         }
     }
 
+    // testimonialReadMore
+    var testimonialReadMore = function () {
+        var $slider = $(".slider-testimonial");
+        if (!$slider.length) return;
+
+        var defaultMaxLength = 240;
+
+        // Auto-truncate slides that do not already have pre-split text
+        $slider.find(".swiper-slide").each(function () {
+            var $slide = $(this);
+            var $text = $slide.find(".text");
+            if (!$text.length) return;
+
+            // If already structured with .text-preview, skip auto-generating
+            if ($text.find(".text-preview").length) return;
+
+            var maxLength = parseInt($slide.data("max-length") || $text.data("max-length") || $slider.data("max-length"), 10) || defaultMaxLength;
+            var fullHtml = $text.html().trim();
+            var rawText = $text.text().replace(/\s+/g, " ").trim();
+
+            if (rawText.length > maxLength) {
+                var trimmed = rawText.slice(0, maxLength);
+                var lastSpace = trimmed.lastIndexOf(" ");
+                if (lastSpace > maxLength * 0.7) {
+                    trimmed = trimmed.slice(0, lastSpace);
+                }
+                trimmed = trimmed.replace(/[,;.\s]+$/, "");
+
+                var endsWithQuote = /[”"']\s*$/.test(fullHtml);
+                var cleanFull = endsWithQuote ? fullHtml.replace(/[”"']\s*$/, "").trim() : fullHtml;
+
+                var newHtml =
+                    '<div class="testimonial-content">' +
+                        '<h3 class="fw-medium text">' +
+                            '<span class="text-preview">' + trimmed +
+                                '<button type="button" class="read-more-trigger" aria-label="Read full testimonial">... more</button>' +
+                                (endsWithQuote ? ' ”' : '') +
+                            '</span>' +
+                            '<span class="text-full">' + cleanFull +
+                                '<button type="button" class="read-less-trigger" aria-label="Show less"> less</button>' +
+                                (endsWithQuote ? ' ”' : '') +
+                            '</span>' +
+                        '</h3>' +
+                    '</div>';
+
+                $slide.empty().append(newHtml);
+            }
+        });
+
+        // Expand full content on clicking "... more"
+        $(document).off("click.testimonialMore", ".read-more-trigger").on("click.testimonialMore", ".read-more-trigger", function (e) {
+            e.preventDefault();
+            var $content = $(this).closest(".testimonial-content");
+            $content.addClass("is-expanded");
+
+            var $sliderEl = $content.closest(".slider-testimonial");
+            var swiperInstance = $sliderEl.length && $sliderEl[0].swiper ? $sliderEl[0].swiper : (window.swiper1 || null);
+
+            if (swiperInstance) {
+                if (swiperInstance.autoplay && swiperInstance.autoplay.running) {
+                    swiperInstance.autoplay.stop();
+                }
+                swiperInstance.update();
+                if (swiperInstance.updateAutoHeight) {
+                    swiperInstance.updateAutoHeight(300);
+                }
+            }
+        });
+
+        // Collapse back to preview on clicking "less"
+        $(document).off("click.testimonialLess", ".read-less-trigger").on("click.testimonialLess", ".read-less-trigger", function (e) {
+            e.preventDefault();
+            var $content = $(this).closest(".testimonial-content");
+            $content.removeClass("is-expanded");
+
+            var $sliderEl = $content.closest(".slider-testimonial");
+            var swiperInstance = $sliderEl.length && $sliderEl[0].swiper ? $sliderEl[0].swiper : (window.swiper1 || null);
+
+            if (swiperInstance) {
+                if (swiperInstance.autoplay && !$sliderEl.is(":hover")) {
+                    swiperInstance.autoplay.start();
+                }
+                swiperInstance.update();
+                if (swiperInstance.updateAutoHeight) {
+                    swiperInstance.updateAutoHeight(300);
+                }
+            }
+        });
+    };
+
     // Dom Ready
     $(function () {
         animateText();
@@ -399,5 +489,6 @@
         active_item();
         settings_color();
         updateDynamicTime();
+        testimonialReadMore();
     });
 })(jQuery);
